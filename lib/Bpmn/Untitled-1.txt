@@ -1,0 +1,61 @@
+ // later
+ nodeOptions: [
+   {
+     id: 'hand-tool
+     icon: 'xxx',
+     title: '抓手'
+   },
+   {
+      id: 'exclusive-gateway',
+    }
+ ],
+ paletteOptions: [{
+    group: 'tools',
+    children: [
+      // 激活抓手工具
+      {
+        id: 'hand-tool',
+
+      },
+      // 激活套索工具
+      {
+        id: 'lasso-tool',
+      },
+      // 激活创建/删除空间工具
+      {
+        id: 'space-tool',
+      },
+      // 激活全局连接工具
+      {
+        id: 'global-connect-tool',
+      },
+    ],
+  },
+  {
+    group: 'flowGateway',
+    children: [
+      // 排他网关
+      {
+        id: 'exclusive-gateway',
+        context: [{
+          // later
+        }]
+      },
+      // 并行网关
+      {
+        id: 'create.parallel-gateway',
+      },
+      // 相容网关
+      {
+        id: 'create.inclusive-gateway',
+
+      },
+    ],
+  }],
+  contextOptions: [{
+      id: 'exclusive-gateway',
+      onClick: (currentNode, xx)=>{}
+  }],
+  toolbarOptions: [{
+
+  }]
